@@ -1,0 +1,46 @@
+
+/*---------- header-mobile----------*/
+.header__mobile{
+  display: none;
+  position: relative;
+  width: 100%;
+  background: $background-sidebar-logo;
+  height: 50px;
+  @include tablets_2{
+    display: block;
+    float: none;
+    height: 50px;
+  }
+
+}
+
+.header__mobile-icon{
+  @include icon-toggle;
+  background-image:url("/assets/img/header/header_hamburger.png");
+}
+
+.header__mobile-icon_active{
+  @include icon-toggle;
+  background-image:url("/assets/img/header/header_cross.png");
+}
+
+
+.header__mobile-img{
+  position: absolute;
+  width: 176px;
+  height: 36px;
+  top: 50%;
+  margin-top: - 18px;
+  left: 30px;
+  background: url("/assets/img/header/header_logo.png") no-repeat;
+  @include tablets_2{
+    width: 100%;
+    left:79px;
+  }
+  @include phones{
+    width: 100%;
+  }
+
+}
+
+

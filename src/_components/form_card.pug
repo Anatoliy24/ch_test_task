@@ -1,0 +1,50 @@
+
+// form
+form(action="").form-validation
+  .cardInfo
+    h2.cardInfo__title Данные банковской карты
+    .cardInfo__cardFont
+      .cardFont__numberCard
+        .cardFont__numberCard-title Номер карты
+        ul.numberCard__list
+          - for(var i = 1; i<=4; i++){
+          li.numberCard__list-item
+            input(type="text" name="cardNumber[]" maxlength='4').numberCard__input
+          -}
+      .cardFont__timeCard
+        .cardFont__timeCard-title Срок действия
+        ul.timeCard__list
+          li.timeCard__list-item
+            select(size=""  name="month" ).timeCard__input_date
+              - for(var i = 1; i<=12; i++){
+              - if(i === 4){
+              option(value=i selected)= "0" + i
+              - }else{
+              -if(i<10){
+              option(value=i)="0" + i
+              -}else{
+              option(value=i)= i
+              -}
+              -}
+              -};
+          li.numberCard__list-item
+            select(size=""  name="year").timeCard__input_year
+              - for(var j = 2016; j<=2020; j++){
+              - if(j === 2018){
+              option(value=j selected)=j
+              - }else{
+              option(value=j)=j
+              - }
+              -}
+      .cardFont__nameCard
+        input(type="text" name="userName" placeholder="Держатель карты").nameCard__input
+    .cardInfo__cardBack
+      .cardInfo__cardBack-band
+      .cardInfo__cardBack-block
+        .cardInfo__cardBack-title Код CVV2 / CVC2
+        .cardInfo__codeCard-block
+          a(href="javascript:void(0);").codeCard__help
+            img(src='../assets/img/content/tip.png' alt='').codeCard__help-img
+          input(type="text" name="cvv" maxlength='3').codeCard__input.field
+  input(type="submit" value="Оплатить").cardInfo_btn
+

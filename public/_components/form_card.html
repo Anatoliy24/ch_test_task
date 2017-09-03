@@ -1,0 +1,69 @@
+
+<!-- form-->
+<form class="form-validation" action="">
+	<div class="cardInfo">
+		<h2 class="cardInfo__title">Данные банковской карты</h2>
+		<div class="cardInfo__cardFont">
+			<div class="cardFont__numberCard">
+				<div class="cardFont__numberCard-title">Номер карты</div>
+				<ul class="numberCard__list">
+					<li class="numberCard__list-item">
+						<input class="numberCard__input" type="text" name="cardNumber[]" maxlength="4"/>
+					</li>
+					<li class="numberCard__list-item">
+						<input class="numberCard__input" type="text" name="cardNumber[]" maxlength="4"/>
+					</li>
+					<li class="numberCard__list-item">
+						<input class="numberCard__input" type="text" name="cardNumber[]" maxlength="4"/>
+					</li>
+					<li class="numberCard__list-item">
+						<input class="numberCard__input" type="text" name="cardNumber[]" maxlength="4"/>
+					</li>
+				</ul>
+			</div>
+			<div class="cardFont__timeCard">
+				<div class="cardFont__timeCard-title">Срок действия</div>
+				<ul class="timeCard__list">
+					<li class="timeCard__list-item">
+						<select class="timeCard__input_date" size="" name="month">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4" selected="selected">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</li>
+					<li class="numberCard__list-item">
+						<select class="timeCard__input_year" size="" name="year">
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018" selected="selected">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div class="cardFont__nameCard">
+				<input class="nameCard__input" type="text" name="userName" placeholder="Держатель карты"/>
+			</div>
+		</div>
+		<div class="cardInfo__cardBack">
+			<div class="cardInfo__cardBack-band"></div>
+			<div class="cardInfo__cardBack-block">
+				<div class="cardInfo__cardBack-title">Код CVV2 / CVC2</div>
+				<div class="cardInfo__codeCard-block"><a class="codeCard__help" href="javascript:void(0);"><img class="codeCard__help-img" src="../assets/img/content/tip.png" alt=""/></a>
+					<input class="codeCard__input field" type="text" name="cvv" maxlength="3"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<input class="cardInfo_btn" type="submit" value="Оплатить"/>
+</form>

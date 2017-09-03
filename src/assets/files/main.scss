@@ -1,0 +1,38 @@
+//vars_size
+$width: 1100px; //ширина wrapper
+$width_dropdown: 230px;
+$height: 110px; //высота header и связанных блоков
+$height_footer: 125px;
+$height_nav_item: 44px;
+
+$body-font : 'als_malinaregular', Helvetica, serif;
+
+//vars_colors
+$color_header:#ffffff;
+$blue: #33c1e3;
+$black: #414141;
+$color_wrapper:#f6f6f6;
+$red:#e96667; //для ховера текста и кнопки
+
+
+
+//layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+
+
+//style
+@import "sections/header";
+@import "sections/section__cupcake.scss";
+@import "sections/section__why.scss";
+@import "sections/section__delivery.scss";
+@import "sections/section__team.scss";
+@import "sections/section__quest.scss";
+@import "sections/section__map.scss";
+@import "sections/footer";
+
+
+//media
+@import "adaptive/media";

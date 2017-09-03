@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  @include desktop_1{
+    font-size: 16px;
+  }
+  @include desktop_2{
+    font-size: 16px;
+  }
+  @include laptop{
+    font-size: 14px;
+  }
+  @include tablets_2{
+    font-size: 12px;
+  }
+  @include phones{
+    font-size: 12px;
+  }
+
+}
+
+body {
+  font-family: "OpenSansRegular", Arial, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: #101114;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.body_active {
+  position: fixed;
+}
+
+
+
+
+h1, h2, h3, h4{
+  margin: 0;
+}
+
+h1{
+  font-family: "OpenSansBold";
+  font-size: rem(35px);
+  margin-bottom: rem(18px);
+  @include tablets_1 {
+    font-size: 24px;
+  }
+
+}
+
+h2{
+  font-family: "OpenSansBold";
+  font-size: rem(22px);
+  margin-bottom: rem(22px);
+
+}
+
+h3{
+  font-family: "OpenSansBold";
+  font-size: rem(30px);
+  text-transform: uppercase;
+  margin-bottom: rem(30px);
+
+}
+
+h4{
+  font-size: rem(28px);
+  margin-bottom: rem(50px);
+}
+
+ul, li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.container{
+  width: rem(960px);
+  height: rem(100px);
+  margin: 0 auto;
+  @include desktop_1;
+  @include desktop_2{
+    width: 100%;
+  };
+  @include laptop{
+    width: 100%;
+  };
+  @include tablets_2{
+    position: relative;
+    width: 100%;
+  };
+  @include phones{
+    width: 100%;
+  };
+
+}
+
+

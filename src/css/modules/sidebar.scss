@@ -1,0 +1,132 @@
+
+/*---------- sidebar----------*/
+
+.sidebar{
+  width: 34%;
+  float: left;
+  background: #1f2229;
+  @include clearfix;
+  @include tablets_2{
+    position: absolute;
+    width: auto;
+    top: -400px;
+    transition: 1s;
+    z-index: 10;
+  }
+  @include phones{
+    width: 100%;
+
+  }
+
+}
+
+.sidebar_active{
+  width: 34%;
+  float: left;
+  @include clearfix;
+  @include tablets_2{
+    position: absolute;
+    width: auto;
+    top: 0px;
+    transition: 1s;
+    z-index: 100;
+  }
+  @include phones{
+    width: 100%;
+
+  }
+}
+
+
+
+.sidebar__logo{
+  position: relative;
+  width: 100%;
+  background: $background-sidebar-logo;
+  height: rem(170px);
+  @include laptop{
+    height: rem(120px);
+  }
+  @include tablets_2{
+    width: 100%;
+    float: none;
+    height: 50px;
+    display: none;
+  }
+  @include phones{
+    width: 100%;
+    float: none;
+    height: 50px;
+  }
+}
+
+.sidebar__logo-img{
+  position: absolute;
+  top: 50%;
+  margin-top: - rem(18px);
+  left: rem(30px);
+  background-image: url("/assets/img/header/header_logo.png") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(176px);
+  height: rem(36px);
+  @include tablets_1{
+    width: 130px;
+    height: 26px;
+  }
+  @include tablets_2{
+    width: 100%;
+  }
+  @include phones{
+    width: 100%;
+  }
+
+}
+
+
+.sidebar__list-item{
+  height: rem(75px);
+  line-height: rem(70px);
+  padding: rem(0px) rem(30px);
+  background: $background-sidebar-logo;
+  span{
+    line-height: normal;
+  }
+  &:hover{
+    background: #2a2d37;
+    cursor: pointer;
+  }
+  &:hover .sidebar__list-item-link{
+    color: #808592;
+  }
+  &:active{
+    background: #2a2d37;
+    cursor: pointer;
+  }
+  @include laptop{
+    padding-right: 15px;
+  }
+
+
+}
+
+.sidebar__list-item-link{
+  font-family: "OpenSansBold";
+  font-size: rem(18px);
+  line-height: rem(75px);
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #ffffff;
+
+  width: 100%;
+  span{
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+  }
+}
+
+.sidebar__list-item-link_color{
+  color: #757a86;
+}

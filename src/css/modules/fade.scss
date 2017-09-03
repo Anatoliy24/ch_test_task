@@ -1,0 +1,14 @@
+
+/*--------fade--------*/
+
+.fade_active{
+    @include tablets_2 {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      background: #000;
+      opacity: 0.3;
+      background-size: cover;
+      z-index: 20;
+    }
+}

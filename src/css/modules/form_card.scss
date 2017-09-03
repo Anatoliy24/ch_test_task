@@ -1,0 +1,280 @@
+
+/*---------- form----------*/
+
+/*--- information ---*/
+
+.info__wrapper{
+  background: $background-content;
+  color: #8494ab;
+  padding: rem(45px) rem(30px);
+}
+
+.info{
+  @include font-content
+}
+
+.info__list-block{
+  @include clearfix;
+  margin-bottom: rem(25px);
+}
+
+.info-title{
+  margin-bottom: rem(27px);
+}
+
+.info__list{
+  display: inline-block;
+  float: left;
+  &:nth-of-type(2){
+    margin-left: rem(40px);
+  }
+}
+
+.info__list-item{
+  margin-bottom: rem(15px);
+
+}
+
+.info__list-item_weight{
+  color: #373c43;
+}
+
+/*--------------------*/
+
+
+/*----- cardInfo ------*/
+
+.cardInfo__title{
+  color: #383d43;
+}
+
+
+input[type="text"]{
+  padding: rem(12px);
+}
+
+input::placeholder {
+  text-transform: none;
+}
+
+
+/*----- cardFont ------*/
+
+.cardInfo__cardFont{
+  position: relative;
+  margin-bottom: rem(35px);
+  z-index: 2;
+  @include card-size;
+  background: $background-content;
+  @include tablets_2{
+    position: static;
+    margin-bottom: 15px;
+  }
+  @include phones{
+    margin-bottom: 15px;
+  }
+}
+
+.cardFont__numberCard{
+  margin-bottom: rem(16px);
+}
+
+.cardFont__numberCard-title{
+  margin-bottom: rem(9px);
+}
+
+.numberCard__list-item{
+  display: inline-block;
+}
+
+.numberCard__input{
+  @include input;
+  width: rem(63px);
+}
+
+
+.cardFont__timeCard{
+  margin-bottom: rem(13px);
+}
+
+.cardFont__timeCard-title{
+  margin-bottom: rem(10px);
+}
+
+.timeCard__list-item{
+  display: inline-block;
+}
+
+.timeCard__input_date{
+  @include input;
+  border: none;
+  width: rem(70px);
+  option{
+    cursor: pointer;
+  }
+}
+
+.timeCard__input_year{
+  @include input;
+  border: none;
+  width: rem(85px);
+}
+
+.nameCard__input{
+  @include input;
+  width: 100%;
+  &::placeholder{
+    color: #bec6cf;
+  }
+}
+/*-----------*/
+
+/*-----styling select------*/
+
+.jq-selectbox__select{
+  @include input;
+  background: #ffffff;
+  padding: rem(10px);
+  &:active{
+    border: 2px solid #e4e9ee;
+  }
+}
+
+.jq-selectbox__select-text {
+  position: absolute;
+  top: 50%;
+  margin-top: - rem(9px);
+  color: #373c43;
+}
+
+.jq-selectbox__dropdown {
+  width: 100%;
+  padding: 5px 12px ;
+  border-radius: 0;
+  background: #FFF;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  text-align: left;
+  top: rem(40px) !important;
+  bottom: inherit !important;
+}
+
+
+.jq-selectbox__trigger-arrow{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+  width: rem(16px);
+  height: rem(8px);
+  background: url("/assets/img/content/select_arrow.png") center no-repeat;
+  @include tablets_2{
+    right: 7px;
+  }
+}
+
+
+
+/*----- cardBack ------*/
+
+
+.cardInfo{
+  position: relative;
+  @include tablets_2{
+    position: static;
+  }
+}
+
+.cardInfo__cardBack{
+  position: absolute;
+  top: rem(70px);
+  left: rem(200px);
+  @include card-size;
+  padding-right: 0;
+  padding-left: 0;
+  z-index: 1;
+  @include laptop{
+    left: 160px;
+  }
+  @include desktop_1{
+    position: static;
+    margin-bottom: 15px;
+  }
+
+}
+
+.cardInfo__cardBack-band{
+  height: rem(40px);
+  width: 100%;
+  background: #e4e9ee;
+  margin-top: rem(15px);
+  margin-bottom: rem(17px);
+}
+
+.cardInfo__cardBack-block{
+  text-align: right;
+  margin-right: rem(15px);
+}
+
+.cardInfo__codeCard-block{
+  position: relative;
+
+}
+
+.codeCard__help{
+  position: absolute;
+  top: 50%;
+  margin-top: - rem(15px);
+  right: rem(5px);
+
+}
+
+
+.codeCard__help-img{
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+}
+
+
+.codeCard__input{
+  @include input;
+  width: rem(137px);
+  &[type="text"]{
+    padding-right: rem(40px);
+
+
+  }
+
+}
+
+/*---------------------*/
+
+
+/*----- button ------*/
+
+
+.cardInfo_btn{
+  height: rem(40px);
+  background: #95bf00;
+  border: none;
+  border-radius: rem(3px);
+  padding: rem(12px) rem(50px) rem(15px) rem(50px);
+  font-family: "OpenSansBold";
+  font-size: rem(14px);
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  &:hover{
+    background: #c1db65;
+  }
+
+}
+
+.errorValidate{
+  border: 1px solid red;
+}
+
+/*--------------------*/
+
+
+

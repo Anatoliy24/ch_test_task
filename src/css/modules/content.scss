@@ -1,0 +1,40 @@
+
+/*----- content ------*/
+
+.content{
+  width: 66%;
+  float: right;
+  @include clearfix;
+  @include font-content;
+  @include tablets_2{
+    width: 100%;
+  }
+  @include phones{
+    width: 100%;
+  }
+}
+
+.content_active{
+  position: fixed;
+}
+
+
+/*----- add-info ------*/
+
+.add__info{
+  padding: rem(30px);
+  background: #373c43;
+}
+
+.add__info-text{
+  color: #808793;
+  font-size: rem(12px);
+  line-height: 2;
+  span{
+    display: inline-block;
+    margin: rem(15px) 0;
+  }
+  span:first-child{
+    margin-bottom: 0;
+  }
+}

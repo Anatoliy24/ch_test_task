@@ -1,0 +1,28 @@
+
+/*---------- header----------*/
+
+.header{
+  @include clearfix;
+}
+
+.header__title{
+  width: 100%;
+  background: #00aeef;
+  padding:rem(36px) rem(157px) rem(35px) rem(30px);
+  @include desktop_2{
+    padding: 15px;
+  }
+  @include tablets_2{
+    width: 100%;
+    float: none;
+
+  }
+
+}
+
+.header__title-desc{
+  font-family: Arial, sans-serif;
+  font-size: rem(14px);
+  line-height: 1.5;
+
+}

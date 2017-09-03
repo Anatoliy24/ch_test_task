@@ -1,0 +1,56 @@
+
+$background-content: #f7f8f8;
+$background-sidebar-logo: #1f2229;
+
+
+
+
+@mixin clearfix {
+  &:after, &:before  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin font-content {
+  font-family: Arial, sans-serif;
+  font-size: rem(16px);
+}
+
+@mixin input{
+  height: rem(40px);
+  border: 1px solid #e4e9ee;
+  outline: none;
+    &:focus{
+      border-width: 2px;
+    }
+}
+
+@mixin card-size{
+  width: rem(349px);
+  height: rem(235px);
+  border: 1px solid #e4e9ee;
+  border-radius: rem(15px);
+  padding: rem(15px);
+    @include tablets_1{
+      width: 280px;
+    }
+    @include tablets_2{
+      width: rem(349px);
+    }
+
+
+}
+
+@mixin icon-toggle{
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  margin-top: -12.5px;
+  width: 27px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
